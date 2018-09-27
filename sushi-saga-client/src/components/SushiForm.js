@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SushiForm = () => (
+const SushiForm = (props) => (
   <div>
     <label>
       Filter By Name:
-      <input type="text" />
+      <input type="text" name="filterTerm" onChange={props.handleForm}/>
     </label>
   </div>
 );
